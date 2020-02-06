@@ -4,10 +4,14 @@
 
 WWV/WWVH emulator. Full format including 100 Hz timecode. Speech by local OS's synthesizer; OSX is best
 
+libportaudio-ocaml-dev is a requisite on Debian
+
 This started as a quick hack but ended up fully functional. The program generates raw 16-bit linear PCM mono audio at a
 48 kHz sample rate on standard output. So to hear it, pipe it into your local audio player, e.g.,
 
 wwvsim | play -t raw -b 16 -e signed-integer -r 48000 -c 1 -
+
+Note play is available through the sox package on debian
 
 Or for the WWVH format:
 
